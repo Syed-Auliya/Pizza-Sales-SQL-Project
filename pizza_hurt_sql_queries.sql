@@ -160,7 +160,7 @@ USING (pizza_id)
 JOIN pizza_types pt
 USING (pizza_type_id)
 GROUP BY pt.name
-ORDER BY revenue
+ORDER BY revenue DESC
 LIMIT 3;
 
 --12.Calculate the percentage contribution of each pizza type to total revenue.
